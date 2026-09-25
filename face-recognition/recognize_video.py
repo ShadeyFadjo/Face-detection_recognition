@@ -1,6 +1,6 @@
 # USAGE
 
-#python recognize_video.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/PyPower_recognizer.pickle --le output/PyPower_label.pickle
+#python recognize_video.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/Kal_recognizer.pickle --le output/Kal_label.pickle
 
 # import the necessary packages
 from imutils.video import VideoStream
