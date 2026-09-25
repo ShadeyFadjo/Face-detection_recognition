@@ -21,7 +21,11 @@ args = vars(ap.parse_args())
 
 # load our serialized model from disk
 print("[INFO] loading model...")
-net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
+# net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
+net = cv2.dnn.readNet(
+    args["model"],
+    args["prototxt"]
+)
 
 # initialize the video stream and allow the cammera sensor to warmup
 print("[INFO] starting video stream...")
